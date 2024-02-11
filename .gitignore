@@ -13,6 +13,7 @@
 .vs/
 /bin/
 /obj/
+Release/
 
 # Compiled binaries
 *.dll
