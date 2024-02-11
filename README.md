@@ -15,6 +15,10 @@ Otherwise, this plugin will not work.
 
 - Copy "plugins" folder and "wndmode.ini" file to your game's root folder.
 
+## Usage
+
+- To enable Windowed mode, make sure WINDOWED value in ``wndmode.ini`` is 1. To disable, you can change it as 0.
+
 ## Building on Windows
 
 - Install [Visual Studio 2017/2022](https://visualstudio.microsoft.com/vs/community/) to your PC. It uses Visual Studio Installer. Community version is free and you can use that one. Check Game development with C++ and Desktop development with C++ options while installing
