@@ -19,9 +19,9 @@ namespace nbalive {
     static void METHOD OnSetWindowed08(int a5) {
         CallMethod<0xA12900>(1);
     }
-    LPCWSTR section = L"MAIN";
+    LPCWSTR section = L"DISPLAY";
     LPCWSTR key = L"WINDOWED";
-    LPCWSTR filePath = L".\\wndmode.ini";
+    LPCWSTR filePath = L".\\main.ini";
     int defaultValue = 0;  // Provide a default value in case the key is not found
 
     // Call GetPrivateProfileInt to retrieve the integer value
