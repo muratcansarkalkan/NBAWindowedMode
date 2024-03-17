@@ -49,14 +49,14 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <TargetExt>.asi</TargetExt>
     <OutDir>D:\Games\NBA LIVE 2005\plugins\</OutDir>
-    <TargetName>$(ProjectName)_d</TargetName>
+    <TargetName>WindowedMode</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>D:\CodingReturn\fifam-api\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\CodingReturn\nbalive-remastered\fifam-api\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <AdditionalOptions>/Zc:threadSafeInit- %(AdditionalOptions)</AdditionalOptions>
@@ -69,6 +69,15 @@
       <GenerateDebugInformation>Debug</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
     </Link>
+    <PostBuildEvent>
+      <Command>copy /y "$(TargetPath)" "D:\Games\NBA LIVE 06\plugins"
+xcopy /y "$(TargetDir)$(TargetName).pdb" "D:\Games\NBA LIVE 06\plugins" 
+copy /y "$(TargetPath)" "D:\Games\NBA LIVE 07\plugins"
+xcopy /y "$(TargetDir)$(TargetName).pdb" "D:\Games\NBA LIVE 07\plugins" 
+copy /y "$(TargetPath)" "D:\Games\NBA LIVE 08\plugins"
+xcopy /y "$(TargetDir)$(TargetName).pdb" "D:\Games\NBA LIVE 08\plugins" </Command>
+    </PostBuildEvent>
+	
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -79,7 +88,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <AdditionalIncludeDirectories>D:\CodingReturn\fifam-api\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\CodingReturn\nbalive-remastered\fifam-api\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>/Zc:threadSafeInit- %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>

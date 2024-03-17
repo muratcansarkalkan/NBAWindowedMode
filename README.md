@@ -13,11 +13,21 @@ This plugin allows user to toggle windowed mode in NBA Live 2005-08 without any 
 - Copy "d3d9.dll", "oledlg.dll" and "plugins" folders from the archive to your game's root folder.
 Otherwise, this plugin will not work.
 
-- Copy "plugins" folder and "wndmode.ini" file to your game's root folder.
+- Copy "plugins" folder to your game's root folder.
+
+- If you have NBAWindowedMode_d.asi in "plugins" folder, remove the file, so the new plugin can work properly.
 
 ## Usage
 
-- To enable Windowed mode, make sure WINDOWED value in ``wndmode.ini`` is 1. To disable, you can change it as 0.
+- To enable Windowed mode, make sure WINDOWED value in ``main.ini`` is 1. If you don't have a ``main.ini`` in your root game folder, create an empty text file and rename name and extension as ``main.ini``. If your file name is ``main.ini.txt``, it will not work.
+After creating your file, copy the lines below.
+
+```
+[DISPLAY]
+WINDOWED=1
+```
+
+- To disable, you can change the value as 0.
 
 ## Building on Windows
 

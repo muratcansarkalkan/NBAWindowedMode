@@ -2,4 +2,13 @@
   EnableWindowed.cpp
 LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification
   LINK : /LTCG specified but no code generation required; remove /LTCG from the link command line to improve linker performance
-  NBAWindowedMode.vcxproj -> D:\Games\NBA LIVE 2005\plugins\NBAWindowedMode_d.asi
+  NBAWindowedMode.vcxproj -> D:\Games\NBA LIVE 2005\plugins\WindowedMode.asi
+          1 file(s) copied.
+  D:\Games\NBA LIVE 2005\plugins\WindowedMode.pdb
+  1 File(s) copied
+          1 file(s) copied.
+  D:\Games\NBA LIVE 2005\plugins\WindowedMode.pdb
+  1 File(s) copied
+          1 file(s) copied.
+  D:\Games\NBA LIVE 2005\plugins\WindowedMode.pdb
+  1 File(s) copied
